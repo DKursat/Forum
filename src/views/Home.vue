@@ -1,7 +1,5 @@
 <template>
-  <div class="home">
-    Navigation
-  </div>
+ <div></div>
 </template>
 
 <script>

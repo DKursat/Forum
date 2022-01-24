@@ -1,15 +1,28 @@
 <template>
+  <Header/>
   
-  <div class="headline"><h1>Forum</h1></div>
   
-  <div id="nav">
-  | <router-link to="/">News</router-link> |
-    <router-link to="/">Games</router-link> |
-    <router-link to="/">Movies</router-link> |
-    <router-link to="/">Communtiy</router-link> |
-  </div>
-  <router-view/>
+  
 </template>
+
+
+<script>
+import Header from "./views/Header.vue";
+
+export default {
+  components: { 
+    Header
+  
+  },
+  computed: {
+    loaded() {
+      return this.$store.state.loadState == "loaded";
+    }
+  }
+};
+</script> 
+
+
 
 <style>
 #app {

@@ -1,14 +1,10 @@
 <template>
   
-  <div class="headline"><h1>Forum</h1></div>
-  
-  <div id="nav">
-  | <router-link to="/">News</router-link> |
-    <router-link to="/">Games</router-link> |
-    <router-link to="/">Movies</router-link> |
-    <router-link to="/">Communtiy</router-link> |
-  </div>
+  <div class="headline"><h1>FORUM für alles</h1></div>
+'<router-link to="/sidebar">Sidebar</router-link>
+ 
   <router-view/>
+
 </template>
 
 <style>

@@ -1,11 +1,34 @@
 <template>
+  <Header/>
   
+  
+
   <div class="headline"><h1>FORUM für alles</h1></div>
 '<router-link to="/sidebar">Sidebar</router-link>
  
   <router-view/>
 
+
 </template>
+
+
+<script>
+import Header from "./views/Header.vue";
+
+export default {
+  components: { 
+    Header
+  
+  },
+  computed: {
+    loaded() {
+      return this.$store.state.loadState == "loaded";
+    }
+  }
+};
+</script> 
+
+
 
 <style>
 #app {

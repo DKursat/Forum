@@ -1,12 +1,8 @@
 <template>
-<div class="headline">
-Forum
-</div>
+  <div class="headline">Forum</div>
 
-
-<div class="header">
-
-<o-dropdown :triggers="['hover']" aria-role="list">
+  <div class="header">
+    <o-dropdown :triggers="['hover']" aria-role="list">
       <o-button variant="info">
         <span>Hover me!</span>
         <o-icon icon="caret-down"></o-icon>
@@ -16,37 +12,27 @@ Forum
       <o-dropdown-item aria-role="listitem">Another action</o-dropdown-item>
       <o-dropdown-item aria-role="listitem">Something else</o-dropdown-item>
     </o-dropdown>
-
-
-</div>
-<div id="nav">
-  | <router-link to="/">News</router-link> |
+  </div>
+  <div id="nav">
+    | <router-link to="/">News</router-link> |
     <router-link to="/">Games</router-link> |
     <router-link to="/">Movies</router-link> |
     <router-link to="/">Communtiy</router-link> |
   </div>
 </template>
-<script>
-
-</script>
+<script></script>
 <style>
-
-.headline{
+.headline {
   background-color: #2c3e50;
   color: black;
   padding: 5%;
   margin-bottom: 0%;
 }
 
-.header{
-
-
-}
-
 #nav {
-     background-color: #2c3e50;
-      color: black;
-     padding: 2px;
+  background-color: #2c3e50;
+  color: black;
+  padding: 2px;
 }
 
 #nav a {
@@ -58,10 +44,8 @@ Forum
   color: #a30202;
 }
 
-.router-link{
+.router-link {
   margin-left: 20%;
   margin-right: 20%;
- 
 }
-
 </style>

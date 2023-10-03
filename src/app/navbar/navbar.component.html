@@ -1,0 +1,79 @@
+<div class="navbar">
+    <ion-grid class="navbar-grid">
+        <ion-row>
+          <ion-col class="navbar-col">Logo</ion-col>
+          <ion-col class="navbar-col">
+          <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" fragment="education">
+            Forum(page Link)
+          </a></ion-col>
+          <ion-col class="navbar-col">
+            <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" fragment="education">
+            News (page Link)
+            </a></ion-col>
+          <ion-col class="navbar-col">
+            <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" fragment="education">
+            Games(page Link)</a></ion-col>
+          <ion-col class="navbar-col">Unsichtbar</ion-col>
+          <ion-col class="navbar-col">Unsichtbar</ion-col>
+          <ion-col class="navbar-col">
+            <ion-button id="popover-button" class=" button-dropdown">Account</ion-button>
+            <ion-popover trigger="popover-button" [dismissOnSelect]="true">
+              <ng-template>
+                <ion-content>
+                  <ion-list>
+                    <! -- Verlinkung -->
+                    <ion-item [button]="true" [detail]="false" >
+                        <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" fragment="education">
+                            Sign in
+                          </a>
+                    </ion-item>
+                    <ion-item [button]="true" [detail]="false">
+                        <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" fragment="education">
+                            Sign up
+                          </a>
+                    </ion-item>            
+                    <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
+                      <ng-template>
+                        <ion-content>
+                        </ion-content>
+                      </ng-template>
+                    </ion-popover>
+                  </ion-list>
+                </ion-content>
+              </ng-template>
+            </ion-popover>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
